@@ -13,8 +13,3 @@ server:
     enabled: true
     mime-types: application/json,text/css,application/javascript
     min-response-size: 2048
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://estore-discovery-service:8761/eureka/
