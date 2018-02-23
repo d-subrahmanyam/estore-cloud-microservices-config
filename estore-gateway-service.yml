@@ -1,11 +1,16 @@
 zuul:
   prefix: /api
-  ignoredServices: '*'
+#  ignoredServices: '*'
   routes:
-    estore-user-services: /users/**
-    estore-catalog-service: /catalog/**
-    estore-order-service: /orders/**
-    estore-gateway-service: /gateway/**
+    estore-user-services:
+      path: /users/**
+      serviceId: ESTORE-USER-SERVICES
+    estore-catalog-service:
+      path: /catalog/**
+      serviceId: ESTORE-CATALOG-SERVICE
+    estore-order-service:
+      path: /orders/**
+      serviceId: ESTORE-ORDER-SERVICE
 
 server:
   port: 8080
