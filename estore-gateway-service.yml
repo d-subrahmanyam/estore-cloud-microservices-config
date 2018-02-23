@@ -10,6 +10,7 @@ zuul:
       serviceId: ESTORE-CATALOG-SERVICE
     orders:
       path: /order-service/**
+      serviceId: ESTORE-ORDER-SERVICE
 
 server:
   port: 8080
