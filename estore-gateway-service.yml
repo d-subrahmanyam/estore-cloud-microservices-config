@@ -14,5 +14,7 @@ server:
     mime-types: application/json,text/css,application/javascript
     min-response-size: 2048
 
-# Internationalization
-spring.messages.basename: messages/messages
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka/
