@@ -5,10 +5,13 @@ zuul:
   routes:
     estore-user-services:
       path: /user-service/**
-    estore-catalog-servcei:
+      serviceId: estore-user-services
+    estore-catalog-service:
       path: /catalog-service/**
+      serviceId: estore-catalog-service
     estore-order-service:
       path: /order-service/**
+      serviceId: estore-order-service
 
 server:
   port: 8080
