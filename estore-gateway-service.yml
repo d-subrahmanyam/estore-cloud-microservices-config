@@ -1,16 +1,14 @@
 zuul:
   prefix: /api
-#  ignoredServices: '*'
+  strepPrefix: true
+  ignoredServices: '*'
   routes:
-    users:
+    estore-user-services:
       path: /user-service/**
-      serviceId: ESTORE-USER-SERVICES
-    catalog:
+    estore-catalog-servcei:
       path: /catalog-service/**
-      serviceId: ESTORE-CATALOG-SERVICE
-    orders:
+    estore-order-service:
       path: /order-service/**
-      serviceId: ESTORE-ORDER-SERVICE
 
 server:
   port: 8080
@@ -26,4 +24,4 @@ eureka:
 
 ribbon:
   eureka:
-    enabled: true
+    enabled: false
